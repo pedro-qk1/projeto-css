@@ -8,6 +8,8 @@
     font-size: 62.5%;
     --default-border: 0.1rem solid rgba(0, 0, 0, .15);
     --default-border-radius: 1.2rem;
+    --color-blue: #8FB1EE;
+    --color-pink: #FF5678;
 }
 
 body{
@@ -43,7 +45,7 @@ aside h1{
 }
 
 aside h1 span, main h2 span{
-    color: #FF5678;
+    color: var(--color-pink);
 }
 
 main{
@@ -69,7 +71,7 @@ main header{
 
 main header i{
     font-size: 2.3rem;
-    color: #FF5678;
+    color: var(--color-pink);
 }
 
 main .actions{
@@ -81,7 +83,7 @@ main .actions a{
     border-radius: var(--default-border-radius);
     font-size: 2.4rem;
     height: 5.5rem;
-    background-color: #8FB1EE;
+    background-color: var(--color-blue);
     text-decoration: none;
     color: #fff;
     margin-top: 5.4rem;
@@ -92,7 +94,7 @@ main .actions a{
 }
 
 main .actions a + a{
-    background-color: #FF5678;
+    background-color: var(--color-pink);
     margin-top: 4.8rem;
 }
 
@@ -114,12 +116,34 @@ main form{
     margin-top: 1.6rem;
 }
 
-main form input{
+main form :is(input, select){
     width: 48.9rem;
     height: 5.5rem;
     background: #fff;
     border: var(--default-border);
     border-radius: var(--default-border-radius);
+}
+
+main form select{
+    appearance: none;
+    cursor: pointer;
+}
+
+main form .select-div{
+    position: relative;
+}
+
+main form .select-div::after{
+    top: 1.5rem;
+    right: 1rem;
+    content: '\f107';
+    font-family: 'Font Awesome 6 Free';
+    font-size: 2.2rem;
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    color: var(--color-blue);
+    pointer-events: none;
 }
 
 main form label{
@@ -139,7 +163,7 @@ main form input + button{
     top: calc(2.7rem + 2rem);
     background-color: transparent;
     border: none;
-    color: #8FB1EE;
+    color: var(--color-blue);
     font-size: 2.4rem;
     cursor: pointer;
 }
