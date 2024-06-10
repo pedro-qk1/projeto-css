@@ -172,3 +172,21 @@ main form input + button{
     font-size: 2.4rem;
     cursor: pointer;
 }
+
+.mid-content{
+    font-size: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.mid-content p{
+    font-weight: 700;
+}
+
+.mid-content span{
+    color: var(--color-pink);
+    font-weight: 400;
+}
