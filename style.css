@@ -11,15 +11,17 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
+    background-color: #f6f6f6;
 }
 
 .content{
     display: grid;
     grid-template-areas:
-        ". . . . ."
-        ". hero . form ."
-        ". hero . form ."
-        ". . . . ."
+        ". . . . . ."
+        ". . . . . ."
+        ". hero . . form ."
+        ". hero . . form ."
+        ". . . . . ."
     ;
     gap: 8.5rem;
 }
@@ -65,7 +67,7 @@ main .actions a{
     border-radius: 1.2rem;
     font-size: 2.4rem;
     height: 5.5rem;
-    background-color: #35E6E9;
+    background-color: #8FB1EE;
     text-decoration: none;
     color: #fff;
     margin-top: 5.4rem;
