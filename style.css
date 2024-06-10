@@ -30,6 +30,18 @@ body{
     gap: 8.5rem;
 }
 
+.content-secundary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 3rem);
+}
+
+.content-secundary aside{
+    margin-bottom: 3rem;
+}
+
 main{
     grid-area: form;
 }
@@ -189,4 +201,8 @@ main form input + button{
 .mid-content span{
     color: var(--color-pink);
     font-weight: 400;
+}
+
+main aside{
+    margin-top: 1.6rem;
 }
