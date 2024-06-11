@@ -204,5 +204,58 @@ main form input + button{
 }
 
 main aside{
-    margin-top: 1.6rem;
+    margin-top: 3rem;
+    width: 100%;
+    font-size: 1.6;
+}
+
+.menu{
+    width: fit-content;
+}
+
+.content-entities{
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.entities{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3rem 0;
+    border-bottom: .1rem solid #ddd;
+}
+
+.entities:first-child{
+    padding-top: 0;
+}
+
+.entities:last-child{
+    border-bottom: none;
+}
+
+.entities a{
+    font-size: 1.8rem;
+    color: var(--color-pink);
+    font-weight: 600;
+}
+
+.entities span{
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+}
+
+.entities span + span{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-blue);
+    padding: .5rem calc(5rem - 4rem);
+    border: .1rem solid var(--color-blue);
+    border-radius: .5rem;
 }
