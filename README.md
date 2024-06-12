@@ -6,3 +6,8 @@ Este é um projeto para mostrar os meus conhecimentos em CSS
 - Variáveis CSS
 - Seletores (~, +, :is)
 - Pseudo elementos
+
+# Tecnologias usadas 
+
+- CSS
+- HTML
